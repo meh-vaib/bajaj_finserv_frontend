@@ -12,7 +12,7 @@ const JsonInput = ({ setResponseData }) => {
     try {
       const parsedData = JSON.parse(jsonInput);
 
-      const response = await axios.post('http://localhost:8080/bfhl', {
+      const response = await axios.post('https://21bsa10144backend.vercel.app/bfhl', {
         data: parsedData.data,
       });
 
