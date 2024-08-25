@@ -12,7 +12,7 @@ const JsonInput = ({ setResponseData }) => {
     try {
       const parsedData = JSON.parse(jsonInput);
 
-      const response = await axios.post('https://21bsa10144backend.vercel.app/bfhl', {
+      const response = await axios.post('https://bajaj-api-52bv.onrender.com/bfhl', {
         data: parsedData.data,
       });
 
